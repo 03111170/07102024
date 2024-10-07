@@ -1,0 +1,16 @@
+def calculate_discount(original_price):
+    discount_rate = 0.10  # 10% discount
+    discount_amount = original_price * discount_rate
+    discounted_price = original_price - discount_amount
+    return discounted_price
+
+# Ask for the original value
+original_price = float(input("Enter the original price: $"))
+
+# Calculate the discounted price
+final_price = calculate_discount(original_price)
+
+# Display the results
+print(f"Original price: ${original_price:.2f}")
+print(f"Discounted price (10% off): ${final_price:.2f}")
+print(f"You save: ${original_price - final_price:.2f}")
